@@ -17,4 +17,4 @@ Discord－https://discord.gg/4eMpVWtWbu
 
 Telegram－https://t.me/FreeportMeta
 
-
+SeedSale－https://freeportmeta.com/SeedSale.html
