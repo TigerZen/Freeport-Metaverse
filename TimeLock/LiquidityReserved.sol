@@ -8,7 +8,8 @@ interface IERC20 {
 
 contract LiquidityReserved{
 	address manager;
-	uint256 public TimeLock = 1652457600; //Start at Sat May 14 2022 00:00:00 UTC+0800.
+	address LRAddress;
+	uint256 public TimeLock = 1647187200; //Start at Mon Mar 14 2022 00:00:00 UTC+0800.
 	
     constructor() public {
         manager = msg.sender;
@@ -24,6 +25,10 @@ contract LiquidityReserved{
         manager = _new_manager;
     }
 
+    function setLRAddress(address _LRAddress) external onlyManager{
+        LRAddress = _LRAddress;
+    }
+
     function withdraw() external onlyManager{
         (msg.sender).transfer(address(this).balance);
     }
@@ -31,7 +36,7 @@ contract LiquidityReserved{
     function withdrawTokens(address tokenAddr) external onlyManager{
         require(isUnlocked(), "Freeport Lock : Time lock not released.");
         uint _thisTokenBalance = IERC20(tokenAddr).balanceOf(address(this));
-        require(IERC20(tokenAddr).transfer(msg.sender, _thisTokenBalance));
+        require(IERC20(tokenAddr).transfer(LRAddress, _thisTokenBalance));
     }
 
     function isUnlocked() public view returns (bool) {

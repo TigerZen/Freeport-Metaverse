@@ -8,7 +8,7 @@ interface IERC20 {
 
 contract PTECrossChainReserve{
 	address manager;
-	uint256 public TimeLock = 1653926400; //Start at Tue May 31 2022 00:00:00 UTC+0800.
+	uint256 public TimeLock = 1653840000; //Start at Tue May 30 2022 00:00:00 UTC+0800.
 	
     constructor() public {
         manager = msg.sender;

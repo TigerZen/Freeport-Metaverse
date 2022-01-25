@@ -173,7 +173,7 @@ contract MTCSeedSale is math{
     function() external payable{}
 	address manager;
 	address LiquidityReserve;
-	address _MTCAddr = 0x1c20Bf9a512d1C65B8b6789F509f75B722796013;
+	address _MTCAddr = 0x5F1D2cfDEB097B83eD2f35Cf3E827DE2b700F05a;
     address _treasury;
 	uint swapMaximum = 10000 * 10 ** uint(18);
 	uint swapMinimum = 100 * 10 ** uint(18);

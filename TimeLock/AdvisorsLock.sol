@@ -30,8 +30,8 @@ contract FreeportAdvisorsLock{
 
     function withdrawTokens(address tokenAddr) external onlyManager{
         require(isUnlocked(), "Freeport Lock : Time lock not released.");
-        uint _thisTokenBalance = IERC20(tokenAddr).balanceOf(address(this));
-        require(IERC20(tokenAddr).transfer(msg.sender, _thisTokenBalance));
+        require(IERC20(tokenAddr).transfer(msg.sender, 5000000 * 10 ** uint(18)));
+		TimeLock += 3153600;
     }
 
     function isUnlocked() public view returns (bool) {

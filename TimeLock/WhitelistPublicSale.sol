@@ -8,7 +8,7 @@ interface IERC20 {
 
 contract WhitelistPublicSale{
 	address manager;
-	uint256 public TimeLock = 1653840000; //Start at Mon May 30 2022 00:00:00 UTC+0800.
+	uint256 public TimeLock = 1648656000; //Start at Thu Mar 31 2022 00:00:00 UTC+0800.
 	
     constructor() public {
         manager = msg.sender;
