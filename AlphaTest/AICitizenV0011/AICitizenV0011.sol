@@ -354,7 +354,7 @@ contract AICitizenContract is cAICitizenContract, math{
 
     struct CitizenInfo {
         uint IsReg;
-        uint RegTime;
+        uint TalkTime;
         uint Friendliness;
         uint TradingAmount;
     }
@@ -377,7 +377,7 @@ contract AICitizenContract is cAICitizenContract, math{
 		require(!isWhitelist(Useradder), "Freeport : This address is in list.");
 		
 		citizenInfos[Useradder].IsReg = 1;
-		citizenInfos[Useradder].RegTime = now;
+		citizenInfos[Useradder].TalkTime = now.sub(86400);
 		citizenInfos[Useradder].Friendliness = 1000;
 		citizenInfos[Useradder].TradingAmount = 0;
 
@@ -392,11 +392,7 @@ contract AICitizenContract is cAICitizenContract, math{
 		if(!isWhitelist(Useradder)){
 			setFamiliar(Useradder);
 		}
-
-		require(citizenInfos[Useradder].ActionPoint > 0, "Freeport : ActionPoint is insufficient.");
-		require(citizenInfos[Useradder].Health > 5, "Freeport : ActionPoint is insufficient.");
-		citizenInfos[Useradder].ActionPoint = citizenInfos[Useradder].ActionPoint.sub(1);
-		citizenInfos[Useradder].Health = citizenInfos[Useradder].Health.sub(3);
+		require(inqAPRecover(Useradder) >= 86400, "Freeport : The TalkTime recovery period is not over yet.");
 		
 		uint _wFriendResult = _random(block.number, 0, 10);
 		if(citizenInfos[Useradder].Friendliness.add(_wFriendResult) > 2000){
@@ -404,7 +400,7 @@ contract AICitizenContract is cAICitizenContract, math{
 		}else{
 			citizenInfos[Useradder].Friendliness = citizenInfos[Useradder].Friendliness.add(_wFriendResult);
 		}
-
+		citizenInfos[Useradder].TalkTime = now;
 		emit TalkResult(Useradder, _wFriendResult, true);
     }
 
@@ -416,8 +412,8 @@ contract AICitizenContract is cAICitizenContract, math{
 		TokenPrice = getPricedata();
 
 		uint Resultbeforebargaining = _tradeAmount.mul(TokenPrice[_tokenIN]).div(TokenPrice[_tokenOUT]);
-		uint _bRate = bargainingRate.sub(citizenInfos[Useradder].Friendliness);
-		uint _bResult = Resultbeforebargaining.mul(_brate).div(10000);
+		uint _bRate = bargainingRate.sub(citizenInfos[msg.sender].Friendliness);
+		uint _bResult = Resultbeforebargaining.mul(_bRate).div(10000);
 		uint ResultAfterbargaining = Resultbeforebargaining.sub(_bResult);
 		uint _Tax = ResultAfterbargaining.mul(tradeTaxFee).div(10000);
 		uint TraderResult = ResultAfterbargaining.sub(_Tax);
@@ -446,7 +442,7 @@ contract AICitizenContract is cAICitizenContract, math{
 
 		uint[] memory returnint = new uint[](4);
 		returnint[0] = citizenInfos[inputAddr].IsReg;
-		returnint[1] = citizenInfos[inputAddr].RegTime;
+		returnint[1] = citizenInfos[inputAddr].TalkTime;
 		returnint[2] = citizenInfos[inputAddr].Friendliness;
 		returnint[3] = citizenInfos[inputAddr].TradingAmount;
 
@@ -496,12 +492,19 @@ contract AICitizenContract is cAICitizenContract, math{
 		TokenPrice = getPricedata();
 		
 		uint Resultbeforebargaining = _tradeAmount.mul(TokenPrice[_tokenIN]).div(TokenPrice[_tokenOUT]);
-		uint _bRate = bargainingRate.sub(citizenInfos[Useradder].Friendliness);
-		uint _bResult = Resultbeforebargaining.mul(_brate).div(10000);
+		uint _bRate = bargainingRate.sub(citizenInfos[msg.sender].Friendliness);
+		uint _bResult = Resultbeforebargaining.mul(_bRate).div(10000);
 		uint ResultAfterbargaining = Resultbeforebargaining.sub(_bResult);
 		uint _Tax = ResultAfterbargaining.mul(tradeTaxFee).div(10000);
 		uint TraderResult = ResultAfterbargaining.sub(_Tax);
         return TraderResult;
+    }
+	
+	//--Check talk recover time--//
+    function inqTalkRecover(address inputAddr) public view returns(
+        uint _RecoverTime){
+		uint rLeftTime = now.sub(citizenInfos[inputAddr].TalkTime);
+        return rLeftTime;
     }
 	
     function _random(uint _block, uint bottom, uint top) private view returns(uint){
