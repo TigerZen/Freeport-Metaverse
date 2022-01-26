@@ -392,7 +392,7 @@ contract AICitizenContract is cAICitizenContract, math{
 		if(!isWhitelist(Useradder)){
 			setFamiliar(Useradder);
 		}
-		require(inqAPRecover(Useradder) >= 86400, "Freeport : The TalkTime recovery period is not over yet.");
+		require(inqTalkRecover(Useradder) >= 86400, "Freeport : The TalkTime recovery period is not over yet.");
 		
 		uint _wFriendResult = _random(block.number, 0, 10);
 		if(citizenInfos[Useradder].Friendliness.add(_wFriendResult) > 2000){
