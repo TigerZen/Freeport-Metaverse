@@ -213,8 +213,9 @@ library EnumerableSet {
     }
 }
 
-interface ISwap{
+interface IFreeport{
     function getOracle() external view returns (uint[] memory);
+    function GetRandomName(uint8 Gender) external view returns(string memory firstName, string memory lastName);
 }
 
 contract cAICitizenContract is Manager{
@@ -222,6 +223,9 @@ contract cAICitizenContract is Manager{
     using EnumerableSet for EnumerableSet.AddressSet;
     EnumerableSet.AddressSet private _whitelist;
 
+    string public CitizenfirstName;
+    string public CitizenlastName;
+	
     address _dexAddr = 0xD99D1c33F9fC3444f8101754aBC46c52416550D1;     //PancakeRouter address.
 	address _secretary = 0x3C7Ba96F1F62081Fcb7AF0bFF4583d198ed660d6;   //Secretary address.
     address _MTCAddr = 0x4603b8d2e98B8Fbafe8A0CDe4F4381bBAB345c8b;     //MTC token contract address.
@@ -232,7 +236,20 @@ contract cAICitizenContract is Manager{
     address _OreAddr = 0x8cBcd4e136563C38Ec534878D9C201421D43BaF0;     //Ore token contract address.
     address _WaterAddr = 0x6Eea93D4B0e6D9580e44Ef16b2C805F313852Dd2;   //Water token contract address.
     address _FoodAddr = 0x4efDE112638d8fC6cE9CE57Bd8a908cC02b5460D;    //Food token contract address.
+    address _FPName = 0xF8051b865689052fCB635e2276B7bafE66B8041A;      //Get name contract address.
 	
+	function setCitizenName(uint8 _Gender) public onlyWorldWill{
+        (CitizenfirstName, CitizenlastName) = IFreeport(_FPName).GetRandomName(_Gender);
+    }
+
+    function checkCitizenfirstName() public view returns (string memory){
+        return CitizenfirstName;
+    }
+
+    function checkCitizenlastName() public view returns (string memory){
+        return CitizenlastName;
+    }
+
 	function getTokenAddr(uint8 _addIndex) public view returns (address) {
 		address[] memory returTokenAddr = new address[](7);
 		returTokenAddr[0] = _MTCAddr;
