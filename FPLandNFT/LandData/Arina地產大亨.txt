@@ -1,0 +1,725 @@
+
+
+
+魔幻土地類:
+V  + 1農場Farm() 收割草藥數量+1 / 地主+1
+這是農作物栽植和動物畜養專用的建物，讓農作物收成倍增，也可將動物放養在此。
+V  + 2礦場Mine 收割礦石礦產數量+1 / 地主+1
+V  + 3工坊Workshop 收割寶石礦產數量+1 / 地主+1
+V  + 4市場Bazaar 賣價+5% 買價-5% 
+V  + 5競技場Arena /功能未開放(創角色+升級養成) 
+
+V  + 6冒險者公會Adventurer's Guild /取得任務
+V  + 7地下城Dungeon /功能未開放
+V  + 8幸運池Lucky Fountain /抽樂透大獎機率加成 10%
+V  + 9馬廄Stable(寄養寵物+育成) /功能未開放
+V  +10魔法塔Mega Tower 收割魔法水晶數量+1 / 地主+1
+
+現代科技土地類:
+V  +11燃料站Fuel station 收割能源礦產數量+1 / 地主+1
+V  +12研究所Research Lab /可支付ARINA 暫時改變 世界現況
+V  +13競馬場Racecourse /功能未開放
+V  +14機場Airport /支付1000ARINA到任一塊地 500ARINA給地主
+V  +15銀行Bank 互轉手續費 /功能未開放
+
+V  +16百貨公司Department store 商品賣價+10%
+V  +17車站Station 發送物品手續費 1000 ARINA -> 500ARINA(給地主)
+V  +18飯店Hotel  /功能未開放
+V  +19商店Shop 商品買價-10%
+V  +20兵工廠Weapon factory /功能未開放
+
+
+魔幻土地類:
+ 2000  + 1農場Farm 收割草藥數量+1 / 地主+1
+這是農作物栽植和動物畜養專用的建物，讓農作物收成倍增，也可將動物放養在此。
+ 2000  + 2礦場Mine 收割礦石礦產數量+1 / 地主+1
+ 2000  + 3工坊Workshop 收割寶石礦產數量+1 / 地主+1
+ 2000  + 4市場Bazaar 賣價+5% 買價-5% 
+ 5000  + 5競技場Arena /功能未開放(創角色+升級養成) 
+
+ 5000  + 6冒險者公會Adventurer's Guild /取得任務
+ 5000  + 7地下城Dungeon /功能未開放
+ 5000  + 8幸運池Lucky Fountain /抽樂透大獎機率加成 10%
+ 5000  + 9馬廄Stable(寄養寵物+育成) /功能未開放
+ 5000  +10魔法塔Mega Tower 收割魔法水晶數量+1 / 地主+1
+
+現代科技土地類:
+ 2000  +11燃料站Fuel station 收割能源礦產數量+1 / 地主+1
+10000  +12研究所Research Lab /可支付ARINA 暫時改變 世界現況
+ 5000  +13競馬場Racecourse /功能未開放
+10000  +14機場Airport /支付1000ARINA到任一塊地 500ARINA給地主
+ 5000  +15銀行Bank 互轉手續費 /功能未開放
+
+ 5000  +16百貨公司Department store 商品賣價+10%
+ 5000  +17車站Station 發送物品手續費 1000 ARINA -> 500ARINA(給地主)
+ 5000  +18飯店Hotel  /功能未開放
+ 5000  +19商店Shop 商品買價-10%
+ 5000  +20兵工廠Weapon factory /功能未開放
+
+
+土地適性:
+  + 1植物性物產
+  + 2礦石類礦產
+  + 3魔法性礦產
+  + 4能源類礦產
+  + 5寶石類礦產
+  + 6人口(稀疏<--正常-->擁擠)
+  + 7生物屬性(狂暴<--中立-->溫馴)
+  + 8環境屬性(邪惡<--中立-->善良)
+  + 9水資源(乾旱<--適中-->水域)
+  +10溫度(冷<--宜人-->熱)
+
+
+
+
+
+
++信仰祝福特性
+  +空地用ARINA幣購買會有10%機率增加祝福特性加成
+  +祝福特性加成共有12種
+  +( 1)產出豐富/Rich mine veins.   5%機率資源箱倍增
+  +( 2)礦藏綿延/Ultra mine veins. 10%機率資源箱倍增
+  +( 3)六畜興旺/The domestic animals are all thriving.  5%機率寵物蛋倍增
+  +( 4)生生不息/Grow and multiply without end. 10%機率寵物蛋倍增
+  +( 5)以物易物/ 樂透大獎獲獎率減半,但是所有產出寵物蛋和資源箱倍增
+  +( 6)金山銀山/ 樂透大獎獲獎率2倍,但是所有產出機率減半
+  +( 7)車水馬龍/ 租金倍增,產出機率和寵物蛋/資源箱數量都產出3倍,地主自己踩中無法抽獎及24小時資源箱
+  +( 8)佃租共榮/ 租金減半,產出寵物蛋/資源箱會倍增並且分一半給地主
+  +( 9)世外桃源/ 免收租金,產出寵物蛋/資源箱會倍增並且分一半給地主,地主自己踩中及24小時資源箱倍增
+  +(10)祥獸獻瑞/ 額外10%機率可獲得 5~10級寵物蛋
+  +(11)意外之材/ 額外10%機率可獲得 5~10級資源箱X1
+  +(12)吉星高照/ 額外 1%機率可獲得  1~5級寵物蛋,額外 1%機率可獲得   1~5級資源箱X1
+
+
++樂透大獎抽獎條件
+  +(1)用ETH付租金後擲骰
+  +(2)用ETH買地後擲骰
+  +(3)玩家踩到自己所有地後擲骰
+  +(4)
+
+
++遊戲資源(含寵物蛋)收割獎抽獎條件
+  +(1)用ETH付租金後擲骰
+  +(2)用ETH買地後擲骰
+  +(3)玩家踩到自己所有地後擲骰
+  +(4)地主每24小時可收割抽獎一次
+
+
++樂透大獎獎池增加減少條件
+V  +01玩家踩中未轉手有主地,並用ETH直接購買土地(買地金20%進入大獎池)
+V  +02玩家踩中已轉手有主地,並用ETH直接購買土地(買地金10%進入大獎池)
+V  +03玩家踩中有主地,並用ETH直接支付土地租金(租金20%進入大獎池)
+  +04玩家踩中自己土地蓋建物支付ETH(50%入大獎池)
+  +05玩家踩中自己土地變更建物支付ETH(50%入大獎池)
+  +06在交易市場上賣出資產獲得ETH(10%入大獎池)
+  -07玩家抽中樂透獎獲得大獎池獎金(獲得大獎池獎金10%)
+
++買地交易類型:
+  +踩中空地用ARINA幣買下
+  +踩中有主地,用ETH買下
+  +選擇任一有主地,用ETH買下
+
+
++金流轉移類型
+  V+( 1)踩中空地用ARINA幣買下(100%付給開發團隊)
+  V+( 2)踩中有主地,用ARINA付租金(100%給地主)
+
+  +( 3)踩中未轉手有主地,用ETH買下(50%給地主)
+  +( 4)踩中未轉手有主地,用ETH買下(10%給開發團隊)
+  +( 5)踩中未轉手有主地,用ETH買下(20%給該土地所有城市-智能合約)
+  +( 6)踩中未轉手有主地,用ETH買下(20%入大獎池)
+
+  +( 7)踩中已轉手有主地,用ETH買下(80%給地主)
+  +( 8)踩中已轉手有主地,用ETH買下(5%給開發團隊)
+  +( 9)踩中已轉手有主地,用ETH買下(5%給該土地所有城市-智能合約)
+  +(10)踩中已轉手有主地,用ETH買下(10%入大獎池)
+
+  +(11)踩中有主地,用ETH付租金(50%給地主)
+  +(12)踩中有主地,用ETH付租金(10%給開發團隊)
+  +(13)踩中有主地,用ETH付租金(20%給該土地所有城市-智能合約)
+  +(14)踩中有主地,用ETH付租金(20%入大獎池)
+
+  +(15)土地蓋建物ETH(20%給開發團隊)
+  +(16)土地蓋建物ETH(30%給該土地所有城市-智能合約)
+  +(17)土地蓋建物ETH(50%入大獎池)
+
+  +(18)土地蓋建物用ARINA(100%給該土地所有城市)
+
+
+//  +(18)土地建物變更ETH(20%給開發團隊)
+//  +(19)土地建物變更ETH(30%給該土地所有城市-智能合約)
+//  +(20)土地建物變更ETH(50%入大獎池)
+
+  +(21)在交易市場上賣出資產獲得ETH(70%給玩家)
+  +(22)在交易市場上賣出資產獲得ETH(5%給交易市場所有人)
+  +(23)在交易市場上賣出資產獲得ETH(5%給開發團隊)
+  +(24)在交易市場上賣出資產獲得ETH(10%給該土地所有城市-智能合約)
+  +(25)在交易市場上賣出資產獲得ETH(10%入大獎池)
+
+  +(26)在交易市場上賣出資產獲得ARINA(90%給玩家)
+  +(27)在交易市場上賣出資產獲得ARINA(10%給交易市場所有人)
+
+  +(88)抽中樂透大獎,獲得大獎池10%金額(100%付給玩家)
+  +(90)玩家使用GoldenToken,馬上獲得大獎池1%金額(100%付給玩家)
+
+//**
++機會/命運/任務
+  +共有27格土地為機會Chance Card(改善下次擲骰會遇到的狀況)
+  +共有27格土地為命運Fate Card(抵消或增長產業重大改變)
+  +共有27格土地為任務Mission Card(滿足條件後獲得回報)
+**//
+
+
++隨機出現EVENT
+
+
+
+
+
+
+資料庫資料表建立
+
+1.帳號(地址)
+user
+CREATE TABLE IF NOT EXISTS `user` (
+		`NO` int(12) NOT NULL AUTO_INCREMENT,
+		`username` char(20) COLLATE utf8_unicode_ci NOT NULL,
+		`ETH_Address` char(100) COLLATE utf8_unicode_ci NOT NULL,
+		`password` char(100) COLLATE utf8_unicode_ci NOT NULL,
+		`level` char(20) COLLATE utf8_unicode_ci NOT NULL,
+		`REGTime` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+		PRIMARY KEY (`NO`)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+
+
+
+1.帳號(EMAIL)
+user
+CREATE TABLE IF NOT EXISTS `user` (
+		`NO` int(12) NOT NULL AUTO_INCREMENT,
+		`username` char(20) COLLATE utf8_unicode_ci NOT NULL,
+		`email` char(100) COLLATE utf8_unicode_ci NOT NULL,
+		`password` char(100) COLLATE utf8_unicode_ci NOT NULL,
+		`level` char(20) COLLATE utf8_unicode_ci NOT NULL,
+		`REGTime` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+		PRIMARY KEY (`NO`)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+
+
+
+2.地產資料
+land_tycoon_lands
+CREATE TABLE IF NOT EXISTS `land_tycoon_lands` (
+		`NO` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`Yaxis` int(4) COLLATE utf8_unicode_ci NOT NULL,
+		`Xaxis` int(4) COLLATE utf8_unicode_ci NOT NULL,
+		`ArinaCost` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`Stars` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`Colony` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`Level` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`Owner` char(50) COLLATE utf8_unicode_ci NOT NULL,
+		`Type` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`Blessed` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`AreaNO` int(4) COLLATE utf8_unicode_ci NOT NULL,
+		PRIMARY KEY (`NO`)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+
+
+
+2-01+.地產資料
+land_tycoon_lands
+CREATE TABLE IF NOT EXISTS `land_tycoon_lands` (
+		`NO` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`Yaxis` int(4) COLLATE utf8_unicode_ci NOT NULL,
+		`Xaxis` int(4) COLLATE utf8_unicode_ci NOT NULL,
+		`ArinaCost` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`Stars` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`Colony` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`Level` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`Owner` char(50) COLLATE utf8_unicode_ci NOT NULL,
+		`Type` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`Blessed` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`building01` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`building02` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`building03` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`building04` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`produce01` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`produce02` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`produce03` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`produce04` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`produce05` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`produce06` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`produce07` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`produce08` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`produce09` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`produce10` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`AreaNO` int(4) COLLATE utf8_unicode_ci NOT NULL,
+		PRIMARY KEY (`NO`)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+
+
+3.玩家資產資料
+land_tycoon_assets
+CREATE TABLE IF NOT EXISTS `land_tycoon_assets` (
+		`NO` int(16) NOT NULL AUTO_INCREMENT,
+		`ETH_Address` char(100) COLLATE utf8_unicode_ci NOT NULL,
+		`ETH_PrivateKey` char(100) COLLATE utf8_unicode_ci NOT NULL,
+		`username` char(20) COLLATE utf8_unicode_ci NOT NULL,
+		`ETH` decimal(50,18) COLLATE utf8_unicode_ci NOT NULL,
+		`ETH_locked` decimal(50,18) COLLATE utf8_unicode_ci NOT NULL,
+		`ARINA` decimal(50,18) COLLATE utf8_unicode_ci NOT NULL,
+		`ARINA_locked` decimal(50,18) COLLATE utf8_unicode_ci NOT NULL,
+		`GoldenToken` int(10) COLLATE utf8_unicode_ci NOT NULL,
+		`GoldenToken_locked` int(10) COLLATE utf8_unicode_ci NOT NULL,
+		`HerbBoxLv01` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`HerbBoxLv01_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`HerbBoxLv02` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`HerbBoxLv02_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`HerbBoxLv03` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`HerbBoxLv03_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`HerbBoxLv04` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`HerbBoxLv04_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`HerbBoxLv05` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`HerbBoxLv05_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`OreChestLv01` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`OreChestLv01_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`OreChestLv02` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`OreChestLv02_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`OreChestLv03` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`OreChestLv03_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`OreChestLv04` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`OreChestLv04_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`OreChestLv05` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`OreChestLv05_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`MC_ChestLv01` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`MC_ChestLv01_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`MC_ChestLv02` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`MC_ChestLv02_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`MC_ChestLv03` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`MC_ChestLv03_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`MC_ChestLv04` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`MC_ChestLv04_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`MC_ChestLv05` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`MC_ChestLv05_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`ES_ChestLv01` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`ES_ChestLv01_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`ES_ChestLv02` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`ES_ChestLv02_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`ES_ChestLv03` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`ES_ChestLv03_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`ES_ChestLv04` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`ES_ChestLv04_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`ES_ChestLv05` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`ES_ChestLv05_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`GemChestLv01` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`GemChestLv01_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`GemChestLv02` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`GemChestLv02_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`GemChestLv03` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`GemChestLv03_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`GemChestLv04` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`GemChestLv04_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`GemChestLv05` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`GemChestLv05_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`PetAggLv01` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`PetAggLv01_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`PetAggLv02` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`PetAggLv02_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`PetAggLv03` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`PetAggLv03_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`PetAggLv04` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`PetAggLv04_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`PetAggLv05` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`PetAggLv05_locked` int(12) COLLATE utf8_unicode_ci NOT NULL,
+		`taken` int(1) COLLATE utf8_unicode_ci NOT NULL,
+		PRIMARY KEY (`NO`)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+
+
+
+4.玩遊戲擲骰紀錄
+dice_history
+CREATE TABLE IF NOT EXISTS `dice_history` (
+		`NO` int(20) NOT NULL AUTO_INCREMENT,
+		`username` char(20) COLLATE utf8_unicode_ci NOT NULL,
+		`land_NO` int(16) COLLATE utf8_unicode_ci NOT NULL,
+		`NowYaxis` int(4) COLLATE utf8_unicode_ci NOT NULL,
+		`NowXaxis` int(4) COLLATE utf8_unicode_ci NOT NULL,
+		`TakeAction` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`LottoAction` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`HarvestAction` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`PayETH` int(1) COLLATE utf8_unicode_ci NOT NULL,
+		`DICETime` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+		PRIMARY KEY (`NO`)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+
+5.樂透大獎紀錄
+lotto_history
+CREATE TABLE IF NOT EXISTS `lotto_history` (
+		`NO` int(20) NOT NULL AUTO_INCREMENT,
+		`dice_NO` int(20) COLLATE utf8_unicode_ci NOT NULL,
+		`username` char(20) COLLATE utf8_unicode_ci NOT NULL,
+		`YourNo` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`lottoNo` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`lottoWins` int(1) COLLATE utf8_unicode_ci NOT NULL,
+		`WinETH` decimal(50,18) COLLATE utf8_unicode_ci NOT NULL,
+		`lottoETime` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+		PRIMARY KEY (`NO`)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+
+//**
+6.機會命運及任務紀錄
+CCM_history
+CREATE TABLE IF NOT EXISTS `CCM_history` (
+		`NO` int(20) NOT NULL AUTO_INCREMENT,
+		`dice_NO` int(20) COLLATE utf8_unicode_ci NOT NULL,
+		`username` char(20) COLLATE utf8_unicode_ci NOT NULL,
+		`CCM` int(1) COLLATE utf8_unicode_ci NOT NULL,
+		`Chance_NO` int(3) COLLATE utf8_unicode_ci NOT NULL,
+		`Fate_No` int(3) COLLATE utf8_unicode_ci NOT NULL,
+		`Mission_NO` int(3) COLLATE utf8_unicode_ci NOT NULL,
+		`CCMTime` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+		PRIMARY KEY (`NO`)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+
+6.機會命運及任務紀錄
+ChanceFate_carditems
+
+
+**//
+
+
+
+6-1.遊戲資源收割紀錄
+harvest_history
+CREATE TABLE IF NOT EXISTS `harvest_history` (
+		`NO` int(20) NOT NULL AUTO_INCREMENT,
+		`dice_NO` int(20) COLLATE utf8_unicode_ci NOT NULL,
+		`username` char(20) COLLATE utf8_unicode_ci NOT NULL,
+		`land_NO` int(16) COLLATE utf8_unicode_ci NOT NULL,
+		`itemtype` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`itemlevel` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`itemQuantity` int(3) COLLATE utf8_unicode_ci NOT NULL,
+		`YourNo` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`HarvestNo` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`harvestTime` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+		PRIMARY KEY (`NO`)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+6-2.城市遊戲資源收割紀錄
+City_harvest_history
+CREATE TABLE IF NOT EXISTS `City_harvest_history` (
+		`NO` int(20) NOT NULL AUTO_INCREMENT,
+		`CityName` char(20) COLLATE utf8_unicode_ci NOT NULL,
+		`land_NO` int(16) COLLATE utf8_unicode_ci NOT NULL,
+		`itemtype` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`itemlevel` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`itemQuantity` int(3) COLLATE utf8_unicode_ci NOT NULL,
+		`YourNo` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`HarvestNo` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`harvestTime` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+		PRIMARY KEY (`NO`)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+7.地主24小時遊戲資源收割紀錄
+Owner_harvest_history
+CREATE TABLE IF NOT EXISTS `Owner_harvest_history` (
+		`NO` int(20) NOT NULL AUTO_INCREMENT,
+		`username` char(20) COLLATE utf8_unicode_ci NOT NULL,
+		`land_NO` int(16) COLLATE utf8_unicode_ci NOT NULL,
+		`Yaxis` int(4) COLLATE utf8_unicode_ci NOT NULL,
+		`Xaxis` int(4) COLLATE utf8_unicode_ci NOT NULL,
+		`itemtype` int(1) COLLATE utf8_unicode_ci NOT NULL,
+		`itemlevel` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`itemQuantity` int(3) COLLATE utf8_unicode_ci NOT NULL,
+		`harvestTime` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+		PRIMARY KEY (`NO`)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+
+8.大獎池紀錄
+Winning_Pool_history
+CREATE TABLE IF NOT EXISTS `Winning_Pool_history` (
+		`NO` int(20) NOT NULL AUTO_INCREMENT,
+		`pooltype` int(1) COLLATE utf8_unicode_ci NOT NULL,
+		`payfrom_user` char(20) COLLATE utf8_unicode_ci NOT NULL,
+		`winning_user` char(20) COLLATE utf8_unicode_ci NOT NULL,
+		`addtopool_ETH` decimal(50,18) COLLATE utf8_unicode_ci NOT NULL,
+		`winfrompool_ETH` decimal(50,18) COLLATE utf8_unicode_ci NOT NULL,
+		`winningpoolTime` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+		PRIMARY KEY (`NO`)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+---------------------------------
+pooltype:
+- 1 BuyLandETH_20
+- 2 BuyLandETH_10
+- 3 PayrentETH_20
+- 4 BuildingETH_50
+- 5 ChangeBuildingTypeETH_50
+- 6 SoldAssets_10
+- 7 WinLotto_Pool10
+- 8
+- 9
+-10
++樂透大獎獎池增加減少條件
+  +玩家踩中未轉手有主地,並用ETH直接購買土地(買地金20%進入大獎池)
+  +玩家踩中已轉手有主地,並用ETH直接購買土地(買地金10%進入大獎池)
+  +玩家踩中有主地,並用ETH直接支付土地租金(租金20%進入大獎池)
+  +玩家踩中自己土地蓋建物支付ETH(50%入大獎池)
+  +玩家踩中自己土地變更建物支付ETH(50%入大獎池)
+  +在交易市場上賣出資產獲得ETH(10%入大獎池)
+  -玩家抽中樂透獎獲得大獎池獎金(獲得大獎池獎金10%)
+---------------------------------
+
+
+
+
+
+
+9.土地購買轉手轉移升級紀錄
+lands_levelup_history
+CREATE TABLE IF NOT EXISTS `lands_levelup_history` (
+		`NO` int(20) NOT NULL AUTO_INCREMENT,
+		`levelup_land_NO` int(16) COLLATE utf8_unicode_ci NOT NULL,
+		`Yaxis` int(4) COLLATE utf8_unicode_ci NOT NULL,
+		`Xaxis` int(4) COLLATE utf8_unicode_ci NOT NULL,
+		`original_land_stars` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`original_land_level` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`changeto_land_stars` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`changeto_land_level` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`payfrom_user` char(20) COLLATE utf8_unicode_ci NOT NULL,
+		`payto_user` char(20) COLLATE utf8_unicode_ci NOT NULL,
+		`pay_Total_ETH` decimal(50,18) COLLATE utf8_unicode_ci NOT NULL,
+		`pay_Total_ARINA` decimal(50,18) COLLATE utf8_unicode_ci NOT NULL,
+		`levelup_Time` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+		PRIMARY KEY (`NO`)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+
+
+10.金流紀錄
+cash_flow_history
+CREATE TABLE IF NOT EXISTS `cash_flow_history` (
+		`NO` int(20) NOT NULL AUTO_INCREMENT,
+		`cash_flow_type` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`payfrom_user` char(20) COLLATE utf8_unicode_ci NOT NULL,
+		`payto_user` char(20) COLLATE utf8_unicode_ci NOT NULL,
+		`pay_Total_ETH` decimal(50,18) COLLATE utf8_unicode_ci NOT NULL,
+		`pay_Total_ARINA` decimal(50,18) COLLATE utf8_unicode_ci NOT NULL,
+		`cash_flow_Time` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+		PRIMARY KEY (`NO`)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+
+/農場/礦場/工坊/競技場/市場/飯店/地下城/幸運池等8種使用類別
+11.土地使用類別對照表
+Building_type_table
+CREATE TABLE IF NOT EXISTS `Building_type_table` (
+		`NO` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`Buildingtype` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`stars` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`level` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`effect01_type` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`effect01_rate` int(3) COLLATE utf8_unicode_ci NOT NULL,
+		`effect01_Quantity` int(3) COLLATE utf8_unicode_ci NOT NULL,
+		`effect02_type` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`effect02_rate` int(3) COLLATE utf8_unicode_ci NOT NULL,
+		`effect02_Quantity` int(3) COLLATE utf8_unicode_ci NOT NULL,
+		`effect03_type` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`effect03_rate` int(3) COLLATE utf8_unicode_ci NOT NULL,
+		`effect03_Quantity` int(3) COLLATE utf8_unicode_ci NOT NULL,
+		`effect04_type` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`effect04_rate` int(3) COLLATE utf8_unicode_ci NOT NULL,
+		`effect04_Quantity` int(3) COLLATE utf8_unicode_ci NOT NULL,
+		`effect05_type` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`effect05_rate` int(3) COLLATE utf8_unicode_ci NOT NULL,
+		`effect05_Quantity` int(3) COLLATE utf8_unicode_ci NOT NULL,
+		PRIMARY KEY (`NO`)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+
+12.土地變更紀錄
+lands_typechange_history
+CREATE TABLE IF NOT EXISTS `lands_typechange_history` (
+		`NO` int(20) NOT NULL AUTO_INCREMENT,
+		`typechange_land_NO` int(16) COLLATE utf8_unicode_ci NOT NULL,
+		`Yaxis` int(4) COLLATE utf8_unicode_ci NOT NULL,
+		`Xaxis` int(4) COLLATE utf8_unicode_ci NOT NULL,
+		`original_land_type` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`changeto_land_type` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`payfrom_user` char(20) COLLATE utf8_unicode_ci NOT NULL,
+		`payto_user` char(20) COLLATE utf8_unicode_ci NOT NULL,
+		`pay_Total_ETH` decimal(50,18) COLLATE utf8_unicode_ci NOT NULL,
+		`pay_Total_ARINA` decimal(50,18) COLLATE utf8_unicode_ci NOT NULL,
+		`typechange_Time` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+		PRIMARY KEY (`NO`)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+
+
+13.登入紀錄
+login_history
+CREATE TABLE IF NOT EXISTS `login_history` (
+		`NO` int(20) NOT NULL AUTO_INCREMENT,
+		`username` char(20) COLLATE utf8_unicode_ci NOT NULL,
+		`ETH_Address` char(100) COLLATE utf8_unicode_ci NOT NULL,
+		`Level` char(1) COLLATE utf8_unicode_ci NOT NULL,
+		`IP` char(20) COLLATE utf8_unicode_ci NOT NULL,
+		`Login_Time` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+		PRIMARY KEY (`NO`)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+
+
+
+14.交易掛單紀錄
+trade_history
+CREATE TABLE IF NOT EXISTS `trade_history` (
+		`NO` int(20) NOT NULL AUTO_INCREMENT,
+		`CityNO` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`TradeType` int(1) COLLATE utf8_unicode_ci NOT NULL,
+		`Buyer` char(20) COLLATE utf8_unicode_ci NOT NULL,
+		`Seller` char(20) COLLATE utf8_unicode_ci NOT NULL,
+		`PriceETH` decimal(50,18) COLLATE utf8_unicode_ci NOT NULL,
+		`PriceARINA` decimal(50,18) COLLATE utf8_unicode_ci NOT NULL,
+		`Broker` char(20) COLLATE utf8_unicode_ci NOT NULL,
+		`CommissionETH` decimal(50,18) COLLATE utf8_unicode_ci NOT NULL,
+		`CommissionARINA` decimal(50,18) COLLATE utf8_unicode_ci NOT NULL,
+		`itemNO` int(2) COLLATE utf8_unicode_ci NOT NULL,
+		`itemQuantity` int(3) COLLATE utf8_unicode_ci NOT NULL,
+		`order_Time` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+		PRIMARY KEY (`NO`)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+---------------------------------------------------------
+TradeType = 1 交易市場買
+TradeType = 2 交易市場賣
+TradeType = 3 玩家互相買賣
+TradeType = 4 其他
+
+
+
+---------------------------------------------------------
+
+
+15.道具價格表
+Item_price_table
+CREATE TABLE IF NOT EXISTS `Item_price_table` (
+		`NO` int(20) NOT NULL AUTO_INCREMENT,
+		`item1` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item2` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item3` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item4` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item5` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item6` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item7` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item8` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item9` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item10` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item11` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item12` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item13` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item14` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item15` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item16` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item17` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item18` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item19` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item20` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item21` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item22` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item23` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item24` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item25` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item26` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item27` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item28` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item29` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		`item30` decimal(10,4) COLLATE utf8_unicode_ci NOT NULL,
+		PRIMARY KEY (`NO`)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+
+16.建築物價格表
+Building_price_table
+CREATE TABLE IF NOT EXISTS `Building_price_table` (
+		`NO` int(1) NOT NULL AUTO_INCREMENT,
+		`BPrice1` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`BPrice2` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`BPrice3` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`BPrice4` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`BPrice5` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`BPrice6` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`BPrice7` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`BPrice8` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`BPrice9` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`BPrice10` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`BPrice11` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`BPrice12` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`BPrice13` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`BPrice14` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`BPrice15` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`BPrice16` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`BPrice17` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`BPrice18` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`BPrice19` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`BPrice20` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		PRIMARY KEY (`NO`)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+17.地主收割更新表
+land_Owner_harvest
+CREATE TABLE IF NOT EXISTS `land_Owner_harvest` (
+		`NO` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`harvest` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`HarvestTime` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+		PRIMARY KEY (`NO`)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+
+18.Event_Code
+Event_Code
+CREATE TABLE IF NOT EXISTS `Event_Code` (
+		`NO` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`ETHAddress` char(100) COLLATE utf8_unicode_ci NOT NULL,
+		`Event_Code` char(100) COLLATE utf8_unicode_ci NOT NULL,
+		`Check` int(1) COLLATE utf8_unicode_ci NOT NULL,
+		`RedeemTime` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+		PRIMARY KEY (`NO`)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+
+19.Event_Code
+Event_CodeA
+
+
+CREATE TABLE IF NOT EXISTS `Event_CodeA` (
+		`NO` int(8) COLLATE utf8_unicode_ci NOT NULL,
+		`ETHAddress` char(100) COLLATE utf8_unicode_ci NOT NULL,
+		`Event_Code` char(100) COLLATE utf8_unicode_ci NOT NULL,
+		`RedeemTime` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+		PRIMARY KEY (`NO`)
+		) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+
+
+Fate Card:
+01.在祝福特性土地上附加祝福特性
+02.升級金額減半
+
+
+
+
+Chance
+01.下次賣地獨得賣地金
+
+

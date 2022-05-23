@@ -1,0 +1,69 @@
+
+LandData 1 :
+0x8C4d3aBC1CFC17eFc04497833e0C58aB3cA584F1
+
+
+LandData 2 :
+0x7C5bbA8360D295b161accD8f234BbFd34a857A33
+
+
+LandData 3 :
+0x713c6733b1931508A5D506695192302cFD5c530C
+
+
+LandData 4 :
+0x3cd9647155ca5471695EDaB805E0DEfee0A2A184
+
+
+特性
+>>樹木適性 (0-1000)
+SuitableForLumber
+>>土地肥沃 (0-1000)
+SoilFertility
+>>動物適性 (0-1000)
+SuitableForAnimals
+>>金屬礦石類礦產 (0-1000)
+MetalOre
+>>超自然礦產 (0-1000)
+SupernaturalMinerals
+>>能量類礦產 (0-1000)
+EnergyMinerals
+>>寶石類礦產 (0-1000)
+GemMinerals
+>>水資源 (0-1000)
+WaterResources
+
+
+
+    struct Resources{
+        uint SuitableForLumber;  //0-1000
+        uint SoilFertility;      //0-1000
+        uint SuitableForAnimals; //0-1000
+        uint WaterResources;     //0-1000
+        uint MetalOres;          //0-1000
+        uint SuperNaturalOres;   //0-1000
+        uint EnergyOres;         //0-1000
+        uint GemOres;            //0-1000
+    }
+
+
+
+
+            ResourcesData[_tokenId].SuitableForLumber = rand(abi.encodePacked(_tokenId, "SuitableForLumber"), 1, 1000);
+            ResourcesData[_tokenId].SoilFertility = rand(abi.encodePacked(_tokenId, "SoilFertility"), 1, 1000);
+            ResourcesData[_tokenId].SuitableForAnimals = rand(abi.encodePacked(_tokenId, "SuitableForAnimals"), 1, 1000);
+            ResourcesData[_tokenId].WaterResources = rand(abi.encodePacked(_tokenId, "WaterResources"), 1, 1000);
+            ResourcesData[_tokenId].MetalOres = rand(abi.encodePacked(_tokenId, "MetalOres"), 1, 1000);
+            ResourcesData[_tokenId].SuperNaturalOres = rand(abi.encodePacked(_tokenId, "SuperNaturalOres"), 1, 1000);
+            ResourcesData[_tokenId].EnergyOres = rand(abi.encodePacked(_tokenId, "EnergyOres"), 1, 1000);
+            ResourcesData[_tokenId].GemOres = rand(abi.encodePacked(_tokenId, "GemOres"), 1, 1000);
+
+
+
+
+
+
+
+
+
+
